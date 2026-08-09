@@ -8,6 +8,8 @@ housed so every pull request gets a Vercel preview URL.
 - Toggle: sm/md, label + supporting text, `role="switch"`
 - GOV.UK theme scope: same components, swapped token layer
 
+Live lab: [component-lab-gamma.vercel.app](https://component-lab-gamma.vercel.app)
+
 Companion tutorial: [Make Your Figma Buttons Actually Clickable](https://elliotrylands.com/notes/figma-design-system-to-react-library-with-prs)
 
 ## Run locally
