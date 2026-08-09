@@ -6,7 +6,6 @@ housed so every pull request gets a Vercel preview URL.
 - Tokens from Untitled UI PRO v3.1 (`src/styles/tokens.css`)
 - Button: seven hierarchies, five sizes, destructive, dot-leading
 - Toggle: sm/md, label + supporting text, `role="switch"`
-- GOV.UK theme scope: same components, swapped token layer
 
 Live lab: [component-lab-gamma.vercel.app](https://component-lab-gamma.vercel.app)
 
@@ -27,7 +26,5 @@ npm run dev
 
 ## Deploy
 
-PR previews come from the Vercel Git integration.
-
 Connect this repo to Vercel. Every push to `main` deploys production. Every pull
-request gets a preview URL.
+request gets a preview URL. PR previews come from the Vercel Git integration.
