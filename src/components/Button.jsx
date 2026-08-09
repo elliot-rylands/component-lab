@@ -11,8 +11,8 @@ const HIERARCHIES = [
 ];
 
 /**
- * Untitled UI Button — Hierarchy × Size × Destructive × Dot.
- * Specs from Figma node 3287:427074 (Untitled UI PRO v3.1).
+ * Tailwind Button: Hierarchy x Size x Destructive x Dot.
+ * Specs from Figma node 3287:427074.
  */
 export default function Button({
   hierarchy = 'primary',

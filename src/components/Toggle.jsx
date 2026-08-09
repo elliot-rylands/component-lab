@@ -1,8 +1,8 @@
 import './toggle.css';
 
 /**
- * Untitled UI Toggle — sm/md, label + supporting text, role=switch.
- * Specs from Figma node 1102:4208 (Untitled UI PRO v3.1).
+ * Tailwind Toggle: sm/md, label + supporting text, role=switch.
+ * Specs from Figma node 1102:4208.
  */
 export default function Toggle({
   size = 'md',

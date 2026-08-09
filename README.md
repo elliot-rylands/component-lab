@@ -1,9 +1,9 @@
 # Component Lab
 
-Interactive Untitled UI components (Buttons + Toggles) pulled from Figma via MCP,
+Interactive Tailwind components (Buttons + Toggles) pulled from Figma via MCP,
 housed so every pull request gets a Vercel preview URL.
 
-- Tokens from Untitled UI PRO v3.1 (`src/styles/tokens.css`)
+- Design tokens in `src/styles/tokens.css`
 - Button: seven hierarchies, five sizes, destructive, dot-leading
 - Toggle: sm/md, label + supporting text, `role="switch"`
 

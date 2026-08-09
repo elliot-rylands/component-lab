@@ -57,10 +57,10 @@ export default function App() {
     <div className="lab">
       <header className="lab__header">
         <div>
-          <p className="lab__eyebrow">Untitled UI · from Figma via MCP</p>
+          <p className="lab__eyebrow">Tailwind · from Figma via MCP</p>
           <h1 className="lab__title">Component Lab</h1>
           <p className="lab__dek">
-            Interactive Buttons and Toggles built from the Untitled UI PRO set.
+            Interactive Buttons and Toggles built from a Tailwind component set.
             Every example copies its JSX.
           </p>
         </div>
