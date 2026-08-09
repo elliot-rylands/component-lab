@@ -1,0 +1,114 @@
+.toggle {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  color: var(--gray-700);
+}
+
+.toggle[data-disabled='true'] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggle__control {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.toggle__input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: inherit;
+}
+
+.toggle__track {
+  display: block;
+  border-radius: var(--radius-full);
+  background: var(--gray-100);
+  box-shadow: var(--shadow-xs);
+  transition:
+    background-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.toggle__thumb {
+  display: block;
+  border-radius: var(--radius-full);
+  background: var(--base-white);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.toggle--sm .toggle__track {
+  width: 36px;
+  height: 20px;
+  padding: 2px;
+}
+
+.toggle--sm .toggle__thumb {
+  width: 16px;
+  height: 16px;
+}
+
+.toggle--sm[data-checked='true'] .toggle__thumb {
+  transform: translateX(16px);
+}
+
+.toggle--md .toggle__track {
+  width: 44px;
+  height: 24px;
+  padding: 2px;
+}
+
+.toggle--md .toggle__thumb {
+  width: 20px;
+  height: 20px;
+}
+
+.toggle--md[data-checked='true'] .toggle__thumb {
+  transform: translateX(20px);
+}
+
+.toggle[data-checked='true'] .toggle__track {
+  background: var(--primary-600);
+}
+
+.toggle:hover:not([data-disabled='true'])[data-checked='false'] .toggle__track {
+  background: var(--gray-200);
+}
+
+.toggle:hover:not([data-disabled='true'])[data-checked='true'] .toggle__track {
+  background: var(--primary-700);
+}
+
+.toggle__input:focus-visible + .toggle__track {
+  box-shadow: var(--focus-ring-primary);
+}
+
+.toggle__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 1px;
+}
+
+.toggle__label {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm-lh);
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.toggle__supporting {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm-lh);
+  font-weight: 400;
+  color: var(--gray-600);
+}
