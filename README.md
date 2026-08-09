@@ -6,6 +6,7 @@ housed so every pull request gets a Vercel preview URL.
 - Design tokens in `src/styles/tokens.css`
 - Button: seven hierarchies, five sizes, destructive, dot-leading
 - Toggle: sm/md, label + supporting text, `role="switch"`
+- GOV.UK theme scope: same components, swapped token layer
 
 Live lab: [component-lab-gamma.vercel.app](https://component-lab-gamma.vercel.app)
 

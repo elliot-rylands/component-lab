@@ -36,6 +36,7 @@ export default function App() {
   const [toast, setToast] = useState(false);
   const [notify, setNotify] = useState(true);
   const [digest, setDigest] = useState(false);
+  const [themeGovuk, setThemeGovuk] = useState(false);
   const [sizeDemo, setSizeDemo] = useState({ sm: true, md: true });
 
   useEffect(() => {
@@ -61,7 +62,8 @@ export default function App() {
           <h1 className="lab__title">Component Lab</h1>
           <p className="lab__dek">
             Interactive Buttons and Toggles built from a Tailwind component set.
-            Every example copies its JSX.
+            Every example copies its JSX. Theming swaps the token layer, not the
+            components.
           </p>
         </div>
       </header>
@@ -215,6 +217,40 @@ export default function App() {
               );
             }}
           />
+        </div>
+      </section>
+
+      <section className="lab__section">
+        <div className="lab__section-head">
+          <div>
+            <h2 className="lab__section-title">Theming: GOV.UK flavour</h2>
+            <p className="lab__section-note">
+              Same Button and Toggle components. A <code>.theme-govuk</code> scope
+              swaps the token layer using govuk-frontend values: green default,
+              square corners, 2px bottom shadow, yellow focus. Arial fallback
+              since GDS Transport is licensed for gov.uk domains only.
+            </p>
+          </div>
+          <Toggle
+            size="sm"
+            label="GOV.UK theme"
+            checked={themeGovuk}
+            onChange={(e) => setThemeGovuk(e.target.checked)}
+          />
+        </div>
+        <div className={themeGovuk ? 'theme-govuk lab__theme-stage' : 'lab__theme-stage'}>
+          <div className="lab__row">
+            <Button hierarchy="primary">Start now</Button>
+            <Button hierarchy="secondary-gray">Secondary</Button>
+            <Button hierarchy="primary" destructive>
+              Warning
+            </Button>
+            <Button hierarchy="link-color">Skip</Button>
+          </div>
+          <div className="lab__row lab__row--toggles">
+            <Toggle label="Email alerts" checked />
+            <Toggle label="SMS alerts" supportingText="Standard rates may apply." />
+          </div>
         </div>
       </section>
 
