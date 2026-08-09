@@ -27,5 +27,7 @@ npm run dev
 
 ## Deploy
 
+PR previews come from the Vercel Git integration.
+
 Connect this repo to Vercel. Every push to `main` deploys production. Every pull
 request gets a preview URL.
